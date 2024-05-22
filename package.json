@@ -23,7 +23,9 @@
     "update": "nx migrate latest",
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
-    "help": "nx help"
+    "help": "nx help",
+    "migrate": "nx migrate latest",
+    "run-migrate": "nx migrate --run-migrations=migrations.json --if-exists"
   },
   "private": false,
   "dependencies": {
@@ -34,10 +36,10 @@
     "recursive-readdir": "^2.2.2"
   },
   "devDependencies": {
-    "@nrwl/eslint-plugin-nx": "10.4.4",
-    "@nrwl/jest": "10.4.4",
-    "@nrwl/nx-plugin": "10.4.4",
-    "@nrwl/workspace": "10.4.4",
+    "@nrwl/eslint-plugin-nx": "10.4.15",
+    "@nrwl/jest": "10.4.15",
+    "@nrwl/nx-plugin": "10.4.15",
+    "@nrwl/workspace": "10.4.15",
     "@types/jest": "26.0.8",
     "@types/node": "~8.9.4",
     "@typescript-eslint/eslint-plugin": "4.3.0",
