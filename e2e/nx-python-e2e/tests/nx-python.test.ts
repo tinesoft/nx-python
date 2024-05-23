@@ -4,7 +4,7 @@ import {
   readJson,
   runNxCommandAsync,
   uniq,
-} from '@nrwl/nx-plugin/testing';
+} from '@nx/plugin/testing';
 describe('nx-python e2e', () => {
   it('should create nx-python', async (done) => {
     const plugin = uniq('nx-python');

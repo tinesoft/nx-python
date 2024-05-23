@@ -16,7 +16,7 @@ import {
   ProjectType,
   toFileName,
   updateWorkspace,
-} from '@nrwl/workspace';
+} from '@nx/workspace';
 
 import { snakeCase } from 'change-case';
 

@@ -5,14 +5,15 @@
   "sourceRoot": "e2e/nx-python-e2e/src",
   "targets": {
     "e2e": {
-      "executor": "@nrwl/nx-plugin:e2e",
+      "executor": "@nx/jest:jest",
       "options": {
-        "target": "nx-python:build",
         "npmPackageName": "@nx-python/nx-python",
         "pluginOutputPath": "dist/packages/nx-python",
         "jestConfig": "e2e/nx-python-e2e/jest.config.js",
-        "tsSpecConfig": "e2e/nx-python-e2e/tsconfig.spec.json"
-      }
+        "tsSpecConfig": "e2e/nx-python-e2e/tsconfig.spec.json",
+        "runInBand": true
+      },
+      "dependsOn": ["nx-python:build"]
     }
   },
   "tags": [],

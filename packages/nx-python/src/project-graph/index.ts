@@ -4,14 +4,14 @@ import {
   ProjectGraphBuilder,
   ProjectGraph,
   ProjectGraphProcessorContext,
-} from '@nrwl/devkit';
+} from '@nx/devkit';
 
 /**
  * Nx Project Graph plugin for go
  *
- * @param {import('@nrwl/devkit').ProjectGraph} graph
- * @param {import('@nrwl/devkit').ProjectGraphProcessorContext} context
- * @returns {import('@nrwl/devkit').ProjectGraph}
+ * @param {import('@nx/devkit').ProjectGraph} graph
+ * @param {import('@nx/devkit').ProjectGraphProcessorContext} context
+ * @returns {import('@nx/devkit').ProjectGraph}
  */
 export const processProjectGraph = (
   graph: ProjectGraph,
