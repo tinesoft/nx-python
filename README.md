@@ -38,11 +38,11 @@ nx g @nx-python/nx-python:app <app-name>
 
 ### Advanced options
 
-* `--tags` or `-t` list of tags for project (used for linting)
-* `--description` Description of project
-* `--repoUrl` Repository URL
-* `--directory` or `-d` A directory where the project is placed
-* `--template` or `-f` python framework to use (f.ex `django` or `flask`, where `python` is used by default)
+- `--tags` or `-t` list of tags for project (used for linting)
+- `--description` Description of project
+- `--repoUrl` Repository URL
+- `--directory` or `-d` A directory where the project is placed
+- `--template` or `-f` python framework to use (f.ex `django` or `flask`, where `python` is used by default)
 
 #### Create Flask app
 
@@ -69,7 +69,7 @@ Currently this configuration support specifying command options to be used
   "commands": {
     "serve": "flask run",
     "lint": "-m pylint",
-    "test": "-m pytest",
+    "test": "-m pytest"
   }
 }
 ```
@@ -148,7 +148,7 @@ nx test <app-name>
 
 If you are using the default native `unittest` python module to for tests:
 
-* The filename must include the prefix `test`
+- The filename must include the prefix `test`
 
 See more info here: [unittest](https://docs.python.org/3/library/unittest.html)
 
@@ -158,12 +158,12 @@ See more info here: [unittest](https://docs.python.org/3/library/unittest.html)
 
 To detect a python project it must either:
 
-* have one or more python files (`.py` extension)
-* have `"compiler": "python"` set in project `build` options
+- have one or more python files (`.py` extension)
+- have `"compiler": "python"` set in project `build` options
 
 ## Contributing
 
-🐍  All contributions are welcome. Make sure you follow the [code of conduct](CODE_OF_CONDUCT.md) in this repository.
+🐍 All contributions are welcome. Make sure you follow the [code of conduct](CODE_OF_CONDUCT.md) in this repository.
 
 ## MIT License
 

@@ -11,17 +11,23 @@ describe('nx-python e2e', () => {
     ensureNxProject('@nx-python/nx-python', 'dist/packages/nx-python');
     await runNxCommandAsync(`generate @nx-python/nx-python:app ${plugin}`);
 
-    const resultBuild = await runNxCommandAsync(`build ${plugin}`)
-    expect(resultBuild.stdout).toContain(`Executing command: python3 -m py_compile`)
+    const resultBuild = await runNxCommandAsync(`build ${plugin}`);
+    expect(resultBuild.stdout).toContain(
+      `Executing command: python3 -m py_compile`
+    );
 
-    const resultLint = await runNxCommandAsync(`lint ${plugin}`)
-    expect(resultLint.stdout).toContain(`Executing command: python3 -m flake8 apps/${plugin}/src/*.py`)
+    const resultLint = await runNxCommandAsync(`lint ${plugin}`);
+    expect(resultLint.stdout).toContain(
+      `Executing command: python3 -m flake8 apps/${plugin}/src/*.py`
+    );
 
-    const resultServe = await runNxCommandAsync(`serve ${plugin}`)
-    expect(resultServe.stdout).toContain(`Executing command: python3`)
+    const resultServe = await runNxCommandAsync(`serve ${plugin}`);
+    expect(resultServe.stdout).toContain(`Executing command: python3`);
 
-    const resultTest = await runNxCommandAsync(`test ${plugin}`)
-    expect(resultTest.stdout).toContain(`Executing command: python3 -m unittest discover -s ./ -p apps/${plugin}/src/*test*.py`)
+    const resultTest = await runNxCommandAsync(`test ${plugin}`);
+    expect(resultTest.stdout).toContain(
+      `Executing command: python3 -m unittest discover -s ./ -p apps/${plugin}/src/*test*.py`
+    );
 
     done();
   });

@@ -7,7 +7,7 @@ This project was generated using [Nx](https://nx.dev).
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/240px-Python-logo-notext.svg.png" width="170"/>
 </p>
 
-The `nx-python` plugin allows users to create a basic python application using `nx` commands. To add the plugin to your project, just follow these steps: 
+The `nx-python` plugin allows users to create a basic python application using `nx` commands. To add the plugin to your project, just follow these steps:
 
 ## Getting started
 
@@ -42,7 +42,7 @@ After creating the `<app-name>` application using the `nx-python` plugin. We can
 
 ### Building the app
 
-The `build` command is going to compile all the python files inside `<app-name>` directory, using the `py_compile` native module. 
+The `build` command is going to compile all the python files inside `<app-name>` directory, using the `py_compile` native module.
 
 ```
 nx build <app-name>
@@ -84,9 +84,10 @@ To test your python app, execute the command:
 ```
 nx test <app-name>
 ```
+
 ## Contributing
 
-🐍  All contributions are welcome. Make sure you follow the [code of conduct](CODE_OF_CONDUCT.md) in this repository. 
+🐍 All contributions are welcome. Make sure you follow the [code of conduct](CODE_OF_CONDUCT.md) in this repository.
 
 ## MIT License
 
