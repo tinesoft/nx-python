@@ -17,7 +17,12 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ]
       }
     }
   },
@@ -27,11 +32,14 @@
     },
     "nx-python-e2e": {
       "tags": [],
-      "implicitDependencies": ["nx-python"]
+      "implicitDependencies": [
+        "nx-python"
+      ]
     }
   },
   "workspaceLayout": {
     "appsDir": "e2e",
     "libsDir": "packages"
-  }
+  },
+  "nxCloudAccessToken": "NzA4MmM0ODgtODNiMC00ZjkzLTg2ZTktYTYwNmQ4MDM4ZWNhfHJlYWQtd3JpdGU="
 }
