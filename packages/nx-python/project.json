@@ -19,8 +19,7 @@
     "test": {
       "executor": "@nx/jest:jest",
       "options": {
-        "jestConfig": "packages/nx-python/jest.config.ts",
-        "passWithNoTests": true
+        "jestConfig": "packages/nx-python/jest.config.ts"
       },
       "outputs": ["{workspaceRoot}/coverage/packages/nx-python"]
     },

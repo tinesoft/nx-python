@@ -11,7 +11,8 @@
         "pluginOutputPath": "dist/packages/nx-python",
         "jestConfig": "e2e/nx-python-e2e/jest.config.js",
         "tsSpecConfig": "e2e/nx-python-e2e/tsconfig.spec.json",
-        "runInBand": true
+        "runInBand": true,
+        "passWithNoTests": false
       },
       "dependsOn": ["nx-python:build"]
     }
