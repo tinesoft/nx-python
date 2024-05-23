@@ -15,10 +15,7 @@
               "packages/nx-python/tsconfig.lib.json",
               "packages/nx-python/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!packages/nx-python/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!packages/nx-python/**/*"]
           }
         },
         "test": {
@@ -27,9 +24,7 @@
             "jestConfig": "packages/nx-python/jest.config.js",
             "passWithNoTests": true
           },
-          "outputs": [
-            "coverage/packages/nx-python"
-          ]
+          "outputs": ["coverage/packages/nx-python"]
         },
         "build": {
           "builder": "@nrwl/node:package",
@@ -57,9 +52,7 @@
               }
             ]
           },
-          "outputs": [
-            "{options.outputPath}"
-          ]
+          "outputs": ["{options.outputPath}"]
         }
       }
     },
