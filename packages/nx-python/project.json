@@ -1,5 +1,6 @@
 {
-  "root": "packages/nx-python",
+  "name": "nx-python",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/nx-python/src",
   "projectType": "library",
   "generators": {},
@@ -21,7 +22,7 @@
         "jestConfig": "packages/nx-python/jest.config.ts",
         "passWithNoTests": true
       },
-      "outputs": ["coverage/packages/nx-python"]
+      "outputs": ["{workspaceRoot}/coverage/packages/nx-python"]
     },
     "build": {
       "executor": "@nrwl/node:package",

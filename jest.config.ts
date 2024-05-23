@@ -1,6 +1,6 @@
 const { getJestProjects } = require('@nrwl/jest');
 
-module.exports = {
+export default {
   testMatch: ['**/+(*.)+(spec|test).+(ts|js)?(x)'],
   testTimeout: 60000,
   transform: {
