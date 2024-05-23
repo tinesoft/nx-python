@@ -3,6 +3,8 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "e2e/nx-python-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["nx-python"],
   "targets": {
     "e2e": {
       "executor": "@nx/jest:jest",
@@ -16,7 +18,5 @@
       },
       "dependsOn": ["nx-python:build"]
     }
-  },
-  "tags": [],
-  "implicitDependencies": ["nx-python"]
+  }
 }
